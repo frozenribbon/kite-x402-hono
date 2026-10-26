@@ -24,3 +24,8 @@ export {
   type RateLimiterOptions,
 } from "./rate-limiter.js";
 export { evaluateIpFilter, parseIpList, matchesIpRule } from "./firewall.js";
+export {
+  ReceiptStore,
+  type StoredReceipt,
+  type ReceiptStoreConfig,
+} from "./receipt-store.js";
