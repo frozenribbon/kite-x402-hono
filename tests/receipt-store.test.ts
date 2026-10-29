@@ -29,7 +29,7 @@ describe("ReceiptStore", () => {
 
     const aliceReceipts = store.getByPayer("0xalice");
     expect(aliceReceipts.length).toBe(2);
-    expect(aliceReceipts[0].txHash).toBe("0x222"); // sorted newest first
+    expect(aliceReceipts[0]?.txHash).toBe("0x222"); // sorted newest first
 
     expect(store.getPayerVolume("0xalice")).toBe(15_000_000n);
   });
